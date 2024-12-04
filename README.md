@@ -21,3 +21,5 @@ This Inventory System was developed as part of a senior high school project, aim
 - Framework/Library: (if applicable, e.g., Bootstrap, Flask) 
 
 This project reflects our early efforts in applying programming skills to solve real-world problems and serves as a foundation for more advanced systems in the future.
+
+Link: https://raltom1.github.io/SHproject/
