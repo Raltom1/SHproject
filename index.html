@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory System</title>
+    <style>
+/* Use ::before pseudo-element to add background and apply blur */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://th.bing.com/th/id/OIP.YA3VN9B1iZQaLDsa3LMorQHaHa?rs=1&pid=ImgDetMain'); /* Background image URL */
+    background-size: cover; /* Ensures the image covers the entire page */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Keeps the background fixed when scrolling */
+    filter: blur(8px); /* Apply the blur effect */
+    z-index: -1; /* Ensures the image stays in the background */
+}
+
+/* Content styles */
+.container {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+}
+
+
+
+/* Headings */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.87);
+}
+
+/* Input and Button Styling */
+div {
+    text-align: center;
+    margin-top: 20px;
+}
+
+input, button {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Table Styling */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    color: black;
+}
+
+th, td {
+    border: 1px solid #080808;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #007BFF;
+    color: white;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Inventory System</h1>
+    <div>
+        <input type="text" id="productName" placeholder="Product Name">
+        <input type="number" id="productPrice" placeholder="Price">
+        <input type="number" id="productQuantity" placeholder="Quantity">
+        <button onclick="addProduct()">Add Product</button>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="productTable"></tbody>
+    </table>
+</body>
+<script src="ma.js"></script>
+</html>
